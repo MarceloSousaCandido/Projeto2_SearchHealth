@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<meta charset="utf-8" http-equiv="Content-Type" content="text/html"/>
+	<head>
+		<title> Fale Conosco - Searching Health - Hortolândia </title>
+		<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.0-rc.3/dist/leaflet.css" />
+		<link rel="stylesheet" type="text/css" href="css/estilo.css">
+
+		<script type="text/javascript" src="javascript.js"></script>
+		
+	</head>
+
+	<body>
+		<div class="pagina">
+			<div class="topo">
+				<nav class="navbar navbar-default">
+					<ul class="nav navbar-nav">
+						<li><a href="index.php">Início</a></li>
+						<li><a href="cadastrodepostos.html">Cadastro de Postos</a></li>
+						<li><a href="contato.html">Contato</a></li>
+						<li><a href="sobre.html">Sobre</a></li>
+					</ul>
+				</nav>
+			</div>
+
+			<div class="conteudo">
+				<h2><center> Fale Conosco - Searching Health - Hortolândia </center></h2>
+				<br><br><br>
+				<form action="php/enviacontato.php" method="POST" name="form_contato">
+  					<table width="588" border="0" align="center" >
+				    	<tr>
+      						<td width="300" class="fontes_textos"><b>Nome completo:</b></td>
+      						<td width="460"><input name="tx_nome" type="text" id="tx_nome" size="60" maxlength="150" autofocus required placeholder="Digite aqui seu Nome Completo"></td>
+		    			</tr>
+    					<tr>
+    						<td class="fontes_textos"><b>E-mail:</b></td>
+		    				<td><input name="tx_email" type="email" id="tx_email" size="60" maxlength="150" required placeholder="Digite aqui seu E-mail"></td>
+    					</tr>
+    					<tr>
+		      				<td class="fontes_textos"><b>Mensagem:</b></td>
+      						<td rowspan="2"><textarea name="tx_mensagem" cols="52" rows="8" id="tx_mensagem" required placeholder="Digite aqui sua Mensagem"></textarea></td>
+      					</tr>
+  					</table>
+  		            <center><input name="Submit" type="submit" value="Enviar dados">
+  		            <input name="Reset" type="reset" value="Redefinir"></center>
+				</form>
+			</div>
+
+			<div class="rodape">
+				<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><center><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />Este trabalho está licenciado sob uma licença <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a></center>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,21 @@
+Modelo de Banco de dados já criado no awardspace. Só falta ir acrescentando os dados no banco de dados.
+
+CREATE DATABASE 2185487_prdwe1
+Senha !@#xbya121418
+
+CREATE 	TABLE postos_saude(
+	p_codigo INT NOT NULL AUTO_INCREMENT,
+	p_nome VARCHAR (50) NOT NULL,
+	p_lat VARCHAR (20) NOT NULL,
+	p_lon VARCHAR (20) NOT NULL,
+	p_endereco VARCHAR (50) NOT NULL,
+	p_telefone VARCHAR (20),
+	PRIMARY KEY(p_codigo));
+
+
+CREATE 	TABLE contatos(
+	c_codigo INT NOT NULL AUTO_INCREMENT,
+	c_nome VARCHAR (50) NOT NULL,
+	c_email VARCHAR (50) NOT NULL,
+	c_mensagem VARCHAR (200) NOT NULL,
+	PRIMARY KEY(c_codigo));

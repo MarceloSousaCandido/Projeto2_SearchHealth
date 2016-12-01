@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<meta charset="utf-8" http-equiv="Content-Type" content="text/html"/>
+	<head>
+		<title> Fale Conosco - Searching Health - Hortolândia </title>
+		<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.0-rc.3/dist/leaflet.css" />
+		<link rel="stylesheet" type="text/css" href="css/estilo.css">
+
+		<script type="text/javascript" src="javascript.js"></script>
+		
+	</head>
+
+	<body>
+		<div class="pagina">
+			<div class="topo">
+				<nav class="navbar navbar-default">
+					<ul class="nav navbar-nav">
+						<li><a href="index.php">Início</a></li>
+						<li><a href="cadastrodepostos.html">Cadastro de Postos</a></li>
+						<li><a href="contato.html">Contato</a></li>
+						<li><a href="sobre.html">Sobre</a></li>
+					</ul>
+				</nav>
+			</div>
+
+			<div class="conteudo">
+				<h2><center> Cadastro de Posto de Sáude <br>- Searching Health - Hortolândia </center></h2>
+				<h3><center>Aqui você pode acrescentar um novo ponto de posto de saúde ao mapa...</center></h3>
+				<br><br><br>
+				<form action="php/incluiposto.php" method="POST">
+  					<table width="588" border="0" align="center" >
+				    	<tr>
+      						<td width="300" class="fontes_textos"><b>Nome do Posto: </b></td>
+      						<td width="460"><input name="tx_nomedoposto" type="text" class="formbutton" id="tx_nomedoposto" size="52" maxlength="150" autofocus required placeholder="Digite o Nome do Posto de Saúde"></td>
+		    			</tr>
+		    			<tr>
+      						<td width="300" class="fontes_textos"><b>Latitude: </b></td>
+      						<td width="460"><input name="tx_latitude" type="text" class="formbutton" id="tx_latitude" size="52" maxlength="150" required></td>
+		    			</tr>
+		    			<tr>
+      						<td width="300" class="fontes_textos"><b>Longitude: </b></td>
+      						<td width="460"><input name="tx_longitude" type="text" class="formbutton" id="tx_longitude" size="52" maxlength="150" required></td>
+		    			</tr>
+		    			<tr>
+      						<td width="300" class="fontes_textos"><b>Endereço Completo:</b></td>
+      						<td width="460"><input name="tx_endereco" type="text" class="formbutton" id="tx_endereco" size="52" maxlength="150" required></td>
+		    			</tr>
+    					<tr>
+      						<td width="300" class="fontes_textos"><b>Telefone: </b></td>
+      						<td width="460"><input name="tx_telefone" type="text" class="formbutton" id="tx_telefone" size="52" maxlength="150" required></td>
+		    			</tr>
+  					</table>
+  					<br><br><center><button type="submit">Cadastrar</button></center>
+				</form>
+			</div>
+
+			<div class="rodape">
+				<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><center><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />Este trabalho está licenciado sob uma licença <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a></center>
+			</div>
+		</div>
+	</body>
+</html>
