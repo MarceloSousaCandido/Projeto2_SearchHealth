@@ -28,7 +28,7 @@
 
         $mail->setFrom('postmaster@sandboxfe37e190a3bf4a53b795cd3570d233d9.mailgun.org', 'Mailer');
     
-        $mail->addAddress('msc18a@gmail.com'); // Add a recipient
+        $mail->addAddress('albordignon@gmail.com'); // Add a recipient
         
         //$mail->addAddress('msc18@terra.com.br'); // Add a recipient
 
